@@ -1,0 +1,27 @@
+{
+  "repo_name": "nlp_project",
+  "project": {"name": "My NLP Project", 
+  "description": "Test project",
+  "publications": [],
+  "contributors": [{"name": "Dhruvesh Patel", "website": "dhruveshp.com","email": "1793dnp@gmail.com"}],
+  "url": null,
+  "docs_url": null,
+  "source_url": null
+  },
+"author": {"name": "Dhruvesh Patel", "email": "1793dnp@gmail.com"},
+  "package_name": "nlp_project",
+  "packages": {
+    "torch": {
+      "use": true,
+      "version": ">=1.7.0"
+    },
+    "allennlp": {
+      "use": true,
+      "version": ">=2.0.0"
+    },
+    "wandb": {
+      "use": true,
+      "version": ">=0.10.18"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{%- if cookiecutter.packages.torch.use %}
+torch{{cookiecutter.packages.torch.version or ">=1.7.0"}}
+{%- endif %}
+{%- if cookiecutter.packages.allennlp.use %}
+allennlp{{cookiecutter.packages.allennlp.version or ">=2.0.0"}}
+{%- endif %}
+scikit-learn==0.23.2
+scipy==1.5.2
+{% if cookiecutter.packages.wandb.use %}
+wandb
+tensorboard
+{%- if cookiecutter.packages.allennlp.use %}
+wandb-allennlp
+{%- endif %}
+{%- endif %}
+jsonlines
+jupyter
+seaborn
+ipywidgets
